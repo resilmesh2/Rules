@@ -1,0 +1,17 @@
+<!--
+Optional but nice to have rules, you can add them to your Wazuh instance, usually in https://127.0.0.1:4343/app/rules#/manager/?tab=ruleset
+assuming "https://127.0.0.1:4343" is your Wazuh Dashboard, you can also manually add them to /var/ossec/etc/rules in your Wazuh server.
+Don't forget to restart the Wazuh Manager with "systemctl restart wazuh-manager" command
+-->
+
+<!--
+Correlates Resilmesh events from same source and destination IP
+-->
+<group name="Resilmesh">
+  <rule id="99902" level="10" frequency="5" timeframe="20">
+    <if_matched_group>Resilmesh</if_matched_group>
+    <same_srcip/>
+    <same_dstip/>
+    <description>Correlated Resilmesh event</description>
+  </rule>
+</group>
