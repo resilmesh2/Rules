@@ -1,1 +1,1 @@
-# Correlation-Rules
+# Wazuh Rules
