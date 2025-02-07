@@ -1,0 +1,20 @@
+<!-- Resilmesh Anomaly Detector Rules -->
+<group name="Resilmesh AD">
+    <rule id="99916" level="3">
+        <description>Resilmesh AD</description>
+        <decoded_as>ad_resilmesh_decoders</decoded_as>
+        <field name="severity">low</field>
+    </rule>
+
+    <rule id="99917" level="8">
+        <description>Resilmesh AD</description>
+        <decoded_as>ad_resilmesh_decoders</decoded_as>
+        <field name="severity">medium</field>
+    </rule>
+
+    <rule id="99918" level="15">
+        <description>Resilmesh AD</description>
+        <decoded_as>ad_resilmesh_decoders</decoded_as>
+        <field name="severity">high</field>
+    </rule>
+</group>
