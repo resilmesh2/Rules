@@ -2,7 +2,7 @@
 
 In addition to the decoder we previously created, we also need some rules, so alerts can be generated, go to
 https://localhost:4343/app/rules#/manager/?tab=ruleset and add the following rules from file 
-[resilmesh_rules.xml](./resilmesh_rules.xml)
+[resilmesh_rules.xml](./resilmesh_rules.xml) and [resilmesh_ad_rules.xml](./resilmesh_ad_rules.xml) one by one, **DO NOT MIX THEM!**
 
 To test the rule, if you want, best way to do it is by repeating the same previous test we did with the decoder.
 ## Correlation Rules
